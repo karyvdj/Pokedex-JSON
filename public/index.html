@@ -21,9 +21,33 @@
     </div>
   </nav>
 
-	<section>
-		<ul id="pokemons" class="row"></ul>
+	<section id="pokemons" class="container">
+
 	</section>
+
+	<!-- Modal-->
+    <section id="modalPokemon" class="modal">
+        <article class="modal-content">
+            <div class="row">
+                <div class="col s6">
+                    <img id="imgPokemon" src="assets/img/1-bulbasaur.png" alt="__nombre__">
+                </div>
+                <div class="col s6">
+                  <h4 id="nombrePokemon">pokemon</h4>
+                  <p>
+										Tipo:
+										<strong>agua</strong>
+									</p>
+                    <h6 class="col s6">Poder: &ensp;<span id=""></span></h6>
+                    <h6 class="col s6">Vida: &ensp;<span id=""></span></h6>
+                    <h6 class="col s6">Evolución: &ensp;<span id=""></span></h6>
+                </div>
+            </div>
+        </article>
+        <div class="modal-footer">
+          <a href="#" class="modal-action modal-close waves-effect waves-green btn-floating grey center right">&#215;</a>
+        </div>
+    </section>
 
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/app.js"></script>
