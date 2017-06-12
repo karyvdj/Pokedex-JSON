@@ -31,22 +31,24 @@ function crearPokemons(pokemons) {
 }
 
 var plantillaModal =
-					"<div class='row'>"+
-							"<div class='col s6'>"+
-									"<img src='__ruta__' alt='pokemon'>"+
-							"</div>"+
-							"<div class='col s6'>"+
-								"<h4>__nombre__</h4>"+
-								"<p><strong>Color: </strong>__color__</p>"+
-								"<p><strong>Forma: </strong>__forma__</p>"+
-                "<p><strong>Habitat: </strong>__habitat__</p>"+
-                "<p><strong>Género: </strong>__genero__</p>"+
-							"</div>"+
-					"</div>";
-	// 		"<div class='modal-footer>"+
-	// 			"<a href='#' class='modal-action modal-close waves-effect waves-green btn-floating grey center righ'>&#215;</a>"+
-	// 		"</div>"+
-	// "</section>";
+    "<article class='modal-content'>"+
+				"<div class='row'>"+
+						"<div class='col s6'>"+
+								"<img src='__ruta__' alt='pokemon'>"+
+						"</div>"+
+						"<div class='col s6'>"+
+							"<h4>__nombre__</h4>"+
+							"<p><strong>Color: </strong>__color__</p>"+
+							"<p><strong>Forma: </strong>__forma__</p>"+
+              "<p><strong>Habitat: </strong>__habitat__</p>"+
+              "<p><strong>Género: </strong>__genero__</p>"+
+						"</div>"+
+				"</div>"+
+      "</article>"+
+      "<div class='modal-footer'>"+
+  			"<a href='#' class='modal-action modal-close waves-effect waves-teal btn-floating orange darken-1 center right'>&#215;</a>"+
+  		"</div>";
+
 
 var detallePokemon = function () {
   var infoPokemon = $(this).data("info");
@@ -77,7 +79,7 @@ var detallePokemon = function () {
 }
 
 var mostrarDetalles = function (detalles) {
-    var modal = $(".modal-content");
+    var modal = $("#modalPokemon");
     var plantillaFinal = "";
     plantillaFinal += plantillaModal.replace("__ruta__", detalles.img)
         .replace("__nombre__", detalles.nombre)
@@ -91,64 +93,64 @@ var mostrarDetalles = function (detalles) {
 
 var imagenesPokemons = [
     {
-        "imagen" : "assets/img/1-bulbasaur.png"
+        imagen : "assets/img/1-bulbasaur.png"
     },
     {
-        "imagen" : "assets/img/2-ivysaur.png"
+        imagen : "assets/img/2-ivysaur.png"
     },
     {
-        "imagen" : "assets/img/3-venusaur.png"
+        imagen : "assets/img/3-venusaur.png"
     },
     {
-        "imagen" : "assets/img/4-charmander.png"
+        imagen : "assets/img/4-charmander.png"
     },
     {
-        "imagen" : "assets/img/5-charmaleon.png"
+        imagen : "assets/img/5-charmaleon.png"
     },
     {
-        "imagen" : "assets/img/6-charizard.png"
+        imagen : "assets/img/6-charizard.png"
     },
     {
-        "imagen" : "assets/img/7-squirtle.png"
+        imagen : "assets/img/7-squirtle.png"
     },
     {
-        "imagen" : "assets/img/8-wartortle.png"
+        imagen : "assets/img/8-wartortle.png"
     },
     {
-        "imagen" : "assets/img/9-blastoise.png"
+        imagen : "assets/img/9-blastoise.png"
     },
     {
-        "imagen" : "assets/img/10-caterpie.png"
+        imagen : "assets/img/10-caterpie.png"
     },
     {
-        "imagen" : "assets/img/11-metapod.png"
+        imagen : "assets/img/11-metapod.png"
     },
     {
-        "imagen" : "assets/img/12-butterfree.png"
+        imagen : "assets/img/12-butterfree.png"
     },
     {
-        "imagen" : "assets/img/13-weedle.png"
+        imagen : "assets/img/13-weedle.png"
     },
     {
-        "imagen" : "assets/img/14-kakuna.png"
+        imagen : "assets/img/14-kakuna.png"
     },
     {
-        "imagen" : "assets/img/15-beedrill.png"
+        imagen : "assets/img/15-beedrill.png"
     },
     {
-        "imagen" : "assets/img/16-pidgey.png"
+        imagen : "assets/img/16-pidgey.png"
     },
     {
-        "imagen" : "assets/img/17-pidgeotto.png"
+        imagen : "assets/img/17-pidgeotto.png"
     },
     {
-        "imagen" : "assets/img/18-pidgeot.png"
+        imagen : "assets/img/18-pidgeot.png"
     },
     {
-        "imagen" : "assets/img/19-rattata.png"
+        imagen : "assets/img/19-rattata.png"
     },
     {
-        "imagen" : "assets/img/20-raticate.png"
+        imagen : "assets/img/20-raticate.png"
     }
 ];
 
