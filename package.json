@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivandevp/xhr-js-jquery.git"
+    "url": "git+https://github.com/karyvdj/Pokedex-JSON"
   },
   "keywords": [
     "js.",
@@ -19,9 +19,9 @@
   "author": "KaryVDj <kar.vaz.donjua@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ivandevp/xhr-js-jquery/issues"
+    "url": "https://github.com/karyvdj/Pokedex-JSON"
   },
-  "homepage": "https://github.com/ivandevp/xhr-js-jquery#readme",
+  "homepage": "https://github.com/karyvdj/Pokedex-JSON",
   "dependencies": {
     "express": "^4.15.3"
   }
